@@ -20,11 +20,29 @@ a {
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 :focus {
     outline-color: var(--hover-color);
 }
+.header-box {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
 .logo {
+    margin-right: 93px;
+
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.20;
@@ -36,7 +54,12 @@ ul {
 .logo > span {
     color: var(--hover-color);
 }
+.header-menu {
+    display: flex;
+}
 .header-item {
+    margin-right: 50px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -44,8 +67,16 @@ ul {
     color: var(--titel-color);
     text-decoration: none;
 }
+.header-item:last-child, 
+.contact:last-child {
+    margin-right: 0;
+}
 .active {
     color: var(--hover-color);
+}
+.header-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .hover:hover,
 .hover:focus {
@@ -54,7 +85,13 @@ ul {
 .hover:active {
     color: var(--active-color);
 }
+.header-contact {
+    display: flex;
+    margin-left: auto;
+}
 .contact {
+    margin-right: 50px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
